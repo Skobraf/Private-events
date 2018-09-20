@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
  root 'pages#home'
 
- resources :user, exept: [:new]
- 
+ resources :users, exept: [:new]
+
  get 'signup', to: 'users#new'
 end
