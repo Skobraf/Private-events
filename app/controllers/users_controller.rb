@@ -46,6 +46,7 @@ class UsersController < ApplicationController
 		if !logged_in? || current_user != @user
 			flash[:danger] = "You are allow to only edit your informations"
 			redirect_to root_path
+		end
 	end
 	
 end
